@@ -72,6 +72,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\CodeView\CefSharpBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CodeView\CefSharpBrowser.Designer.cs">
+      <DependentUpon>CefSharpBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CodeView\SavingSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CodeView\SavingSettings.Designer.cs">
+      <DependentUpon>SavingSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +92,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Components\CodeView\CefSharpBrowser.resx">
+      <DependentUpon>CefSharpBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CodeView\SavingSettings.resx">
+      <DependentUpon>SavingSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
